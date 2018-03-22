@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Activate account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div>
+        <h3>Activate</h3>
+        <p id="username"></p>
+        <p>
+            Click the link below for activating your RabbitOops account,
+            if you has any question, please contact <a href="">me</a>.
+        </p>
+        <p>
+            <a id="email" href=""></a>
+        </p>
+    </div>
+</body>
+</html>
+<script>
+    window.onload = function () {
+        const username = document.getElementById('username')
+        username.innerHTML = user.username
+        const email = document.getElementById('email')
+        const href = `http://localhost/account/activate?email=${user.email}&sessionid=${user.sessionid}`
+        email.href = href
+        email.innerHTML = href
+    }
+</script>
